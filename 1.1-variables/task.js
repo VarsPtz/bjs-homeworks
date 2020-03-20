@@ -6,38 +6,37 @@
  */
 
 function averageMark(a, g, p) {	
-		
-		let algebra = a,
-		 	  geography = g,
-						physics = p,
-						averageScore;
+  let algebra = a,
+      geography = g,
+      physics = p,
+      averageScore;
 
-						averageScore = ((algebra + geography + physics) / 3).toFixed(1); 
-		 	    
-		return averageScore;
+      averageScore = ((algebra + geography + physics) / 3).toFixed(1); 
+
+  return averageScore;
 
 }
 
 function sayHello(userName) {
-		
-		let myName = userName;   
-    
-		return `Привет, мир! Меня зовут ${myName}.`;
-		
+
+  let myName = userName;   
+  
+  return `Привет, мир! Меня зовут ${myName}.`;
+  
 }
 
 function calculateFormula() {
-				
-		let x,
-						y,
-						z,
-						result;
-		
-		x = 2;
-		y = 22;
-		z = 0;
-		result = x * y + 5 * z + x - 1;
-	
-		return result;
-		
+
+  let x,
+      y,
+      z,
+      result;
+
+  x = 2;
+  y = 22;
+  z = 0;
+  result = x * y + 5 * z + x - 1;
+
+  return result;
+
 }
