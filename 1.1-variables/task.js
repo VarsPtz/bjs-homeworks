@@ -11,7 +11,7 @@ function averageMark(a, g, p) {
       physics = p,
       averageScore;
 
-      averageScore = ((algebra + geography + physics) / 3).toFixed(1); 
+      averageScore = Math.round((algebra + geography + physics) / 3); 
 
   return averageScore;
 
@@ -21,7 +21,7 @@ function sayHello(userName) {
 
   let myName = userName;   
   
-  return `Привет, мир! Меня зовут ${myName}.`;
+  return `Привет, мир! Меня зовут ${myName}`;
   
 }
 
