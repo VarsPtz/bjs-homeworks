@@ -38,9 +38,7 @@ function getAverageMark(marks) {
 
     for (let i = 0; i < arrayMarksLength; i++) {
         Sum += arrayMarks[i];
-    }
-
-    console.log(Sum);
+    }    
 
     return Sum / arrayMarksLength;
 
