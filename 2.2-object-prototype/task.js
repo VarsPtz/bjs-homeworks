@@ -41,6 +41,6 @@ function checkBirthday(birthday) {
     let birthdayDate = +new Date(arrayBirthday[0], arrayBirthday[1] - 1, arrayBirthday[2]);
     let age = (now - birthdayDate) / (1000 * 60 * 60 * 24 * 365.25);
 
-    return age >= 18 ? true : false;
+    return age >= 18;
     
 }
