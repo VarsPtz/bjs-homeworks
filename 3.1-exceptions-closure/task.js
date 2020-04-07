@@ -63,20 +63,12 @@ function getTriangle(firstParty, secondParty, thirdParty) {
 
   try {
    return new Triangle (firstParty, secondParty, thirdParty);
-  } catch {
-   class WrongTriangle {
+  } catch {  
 
-     getArea() {
-      return "Ошибка! Неправильный треугольник";
-     }
-
-     getPerimeter() {
-      return "Ошибка! Неправильный треугольник";
-     }
-
-   }
-
-   return new WrongTriangle();
+   return {
+     getArea: () => "Ошибка! Неправильный треугольник",
+     getPerimeter: () => "Ошибка! Неправильный треугольник"
+   };
 
   }   
   
