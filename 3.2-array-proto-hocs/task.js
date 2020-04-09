@@ -49,11 +49,11 @@ function memorize(fn, limit) {
 function testCase(testFunction, timerName) {
   console.time(timerName);
   for (let i = 0; i < 101; i++) {
-    array.forEach((item) => {
+    newArray.forEach((item) => {
       testFunction(...item);
     });
   }
-  console.timerEnd(timeName);
+  console.timerEnd(timerName);
 }
 
 const newArray = [
@@ -69,6 +69,9 @@ const newArray = [
 // Результат выполнения testCase(sum, "sum") с задержкой 253186мс, без задержки 1.6мс
 // Результат выполнения testCase(memorize, "memorize") с задержкой 1.2мс, без задержки 1.05мс
 // Функция memorize отрабатывает быстрее!
+
+
+
 
 // testCase ver.2
 // function testCase(testFunction) {
