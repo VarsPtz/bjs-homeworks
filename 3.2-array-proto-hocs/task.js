@@ -28,7 +28,7 @@ function memorize(fn, limit) {
   return (...argument) => {  
 
    const searchInMemory = memory.find((item) =>
-     compareArrays(item.args, Array.from(argument))
+     compareArrays(item.args, argument)
    );
 
    if (searchInMemory) {
@@ -38,7 +38,11 @@ function memorize(fn, limit) {
 
    const result = fn(...argument);   
    memory.push({ args: Array.from(argument), result: result });
-   if (memory.length > limit) memory.shift();
+
+   if (memory.length > limit) {
+     memory.shift();
+   }   
+
    console.log("result from function memorize()");
    return result;
     
